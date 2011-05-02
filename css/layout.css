@@ -4,114 +4,13 @@ Grey Box Method - Layout CSS
 ----------------------------------------------- */
 
 body {
+	background: #eee;
 	border-top: 5px solid #000;
 	color: #333;
+	font-size: 11px;
 	padding: 0 0 40px;
 }
 
-#about_me img { border: 5px solid #333; margin: 3px; }
-
-.info { background: #fff; padding: 10px;}
-
-.article { border-bottom: 5px solid #c9182f; padding-bottom: 10px; margin-bottom: 15px;}
-
-.non_home_box {
-    display: none;
-}
-
-#reflist h3 { 
-  font-size: 1.1em; 
-  background: #fff; 
-}
-#reflist h3 a { 
- color: #c9182f;
-}
-#reflist h4 { font-size: 0.9em; }
-#reflist .block { margin: 0; padding: 0; }
-
-code { background: #ffe; padding: 2px 5px; }
-
-p.nutshell {
-  background: #ddd;
-  padding: 5px;
-}
-
-.box pre { 
-  margin-top: 10px;
-  padding: 8px;
-  background: #ffe; 
-  color: #555;
-}
-
-.box code.code {
-  white-space:pre;
-  font-family:monospace;
-  padding: 8px;
-  background: #ffe;
-  display: block;
-  margin: 10px;
-  color: #555;
-}
-pre b { color: #111; }
-.red { color: #d33; }
-.green { color: #383; }
-.umber { color: #8A3324; }
-.lblue { color: #55a; }
-.blue { color: #447; }
-.yellow { color: #993; }
-.hl { background: #eea; }
-
-.box h4 { 
-  font-family:monospace;
-  margin-top: 20px;
-  color: #833;
-}
-.box h4 small { 
-  color: #888;
-  font-size: 0.8em;
-  margin-left: 10px;
-  font-weight: normal;
-}
-
-.note { 
-  float: right; 
-  border: 10px; 
-  padding: 8px; 
-  background: #dfd;
-  border: 1px solid #8a8;
-  width: 120px;
-}
-.note h3 {
-  font-size: 1.1em;
-  color: #353;
-}
-
-ul#menu { 
-    background: #c9182f;
-    padding: .5em;
-    display: inline;
-    color: #fff;
-}
-ul#menu li {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    padding-right: 10px;
-    padding-left: 10px;
-    display:inline;
-    font-family: "inconsolata-1","inconsolata-2";
-    font-size: 1.1em;
-}
-
-ul#menu li a { color: #fff; }
-
-.scribble-preview { 
-    background: #ff9; 
-    padding: 8px;
-    border: 1px solid #ee6;
-}
-
-img#me { border: 8px solid #333; }
 
 /* anchors
 ----------------------------------------------- */
@@ -124,13 +23,22 @@ a:hover {
 	color:#333;
 }
 
+
+/* 960 grid system container background
+----------------------------------------------- */
+.container_12,
+.container_16 {
+	background:#fff;
+}
+
+
 /* headings
 ----------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {line-height:1.2em; margin-bottom:.3em;}
-h2 {margin-top:1em; }
+h2 {margin-top:1em;}
 h5 {font-size:1.2em;}
 h6 {font-size:1em; text-transform:uppercase;}
-h3 { color: #c9182f; }
+
 
 h1 a {
 	font-weight:normal;
@@ -139,35 +47,32 @@ h1 a {
 
 /* branding
 ----------------------------------------------- */
-#branding {
+h1#branding {
 	font-weight:normal;
-	font-size:4em;
+	font-size:3em;
 	text-align:left;
-	padding:8px;
+	background:#aaa;
+	padding:.7em 1em;
 	margin-bottom:0;
-	color: #333;
-	background: #fff;
 }
 
 
 /* page heading
 ----------------------------------------------- */
-#page-heading {
-	padding: 5px;
-	background: #000;
-	color: #eee;
-	font-size:2em;
-	letter-spacing: 8px;
+h2#page-heading {
+	font-weight:normal;
+	padding:.5em;
+	margin:0 0 10px 0;
+	border-bottom:1px solid #ccc;
 }
 
 
 /* boxes
 ----------------------------------------------- */
 .box {
-	background:#eee;
+	background:#ddd;
 	margin-bottom:20px;
 	padding:10px 10px 1px 10px;
-	font-size: 1.1em;
 }
 .box h2 {
 	font-size:1em;
@@ -178,33 +83,15 @@ h1 a {
 	margin:-10px -10px 0 -10px;
 	padding:6px 12px;
 }
-.box h2 .desc {
-  margin-left: 20px;
-	text-transform:none;
-  color: #aaa;
-}
 .box h2 a,
 .box h2 a.visible {
-	background-color:#111;
 	color:#fff;
-	display:inline;
+	background:#333 url("../img/switch_minus.gif") 97% 50% no-repeat;
+	display:block;
 	padding:6px 12px;
 	margin:-6px -12px;
 	border:none;
-	text-transform:none;
 }
-.box h2 .docs {
-  color: #999;
-	display:inline;
-  float: right;
-	background-color:#333;
-}
-.box h2 .docs a {
-	background-color:#333;
-	padding:0;
-	margin:0;
-}
-
 .grid_4 .box h2 a {
 	background-position: 97% 50%;
 }
@@ -216,6 +103,10 @@ h1 a {
 }
 
 
+.box h2 a.hidden,
+.box h2 a.hidden:hover {
+	background-image: url("../img/switch_plus.gif");
+}
 .box h2 a:hover {
 	background-color:#111;
 }
@@ -239,9 +130,10 @@ p {
 	margin-bottom:1em;
 }
 blockquote {
-  font-family: "inconsolata-1","inconsolata-2";
-  padding-left:1em;
-  border-left:4px solid #ccc;
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size:1.2em;
+	padding-left:1em;
+	border-left:4px solid #ccc;
 }
 blockquote cite {
 	font-size:.9em;
@@ -478,7 +370,6 @@ input.search.button {
 .box .article {
 	border-top:3px solid #fff;
 	padding:13px 10px 0 10px;
-	background: #fff;
 }
 .article h2 {
 	font-size:2em;
