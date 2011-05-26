@@ -1,25 +1,98 @@
 ---
 layout: reference
 ---
-<div class="box">
-  <h2>Test Driven Development Exercises</h2>
-  <span>Step by Step Exercises and Examples to Learn Test Driven Development</span>
-  
-  <div class="block">
-    <p>
-       TODO.
-    </p>
-    <p>
-   		 You can go to <a href="http://theprogrammingchronicles.com">The Programming Chronicles</a> for additional information.
-    </p>
-  </div>
-</div>
-
-<div class="box">
-   <h2>Authors</h2>
-   <div class="block">
+<a href="https://github.com/theprogrammingchronicles/tpc-tdd-exercises">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+</a>
+  <div class="box">
+    <h2>
+      <a name="overview">Test Driven Development Exercises</a>
+      <span>Step by Step Exercises and Examples to Learn Test Driven Development</span>  
+    </h2>  
+    <div class="block">
       <p>
-      Pedro Ballesteros <span class="umber">(pedro@theprogrammingchronicles.com)</span>   
-      <p>   
+      The exercises are coded in Java, but I think it would be easy to migrate to other languages. I've tried to
+      use basic JDK elements and avoid to use any particular framework or library, except for the unit testing 
+      and mocking libraries.</p>
+      
+      <p>The unit tests are written with <strong>JUnit 4.0</strong> and the automatic mocking with 
+      <strong>Mockito</strong>. Even so there are some exercises that show you how to make unit
+      tests or mocks without any framework or library help such JUnit or Mockito.</p>
+      
+      <p>The build system is <strong>Maven 2</strong> and all the projects generate a lot of useful
+         information with <code>mvn site</code> command.</p>
+    </div>
   </div>
-</div>
+  
+  <div class="box">
+    <h2>
+      <a name="structure">Organization of the Exercises Projects</a> 
+    </h2>  
+    <div class="block">
+      <p>
+      The most of the exercises are about the implementation of an application called <b>WikiAddressbook</b>. 
+      I have planned to publish information and notes about this imaginary application. In short you can think 
+      of it as an application to manage a global address book where anonymous people can create, edit, update 
+      and delete contacts. Everyone in the world can contribute to create the content of the bigger address book
+      of the world through the magic of Web 2.0 Collective Intelligence.</p>
+        
+      <p>
+      The exercises are organized in several lessons and appendix. Every lesson has its own readme file
+      where you can look for the goals of the lesson. Each lesson is divided in several projects that 
+      shows individual steps of the incremental and iterative process of TDD. Some steps show very little 
+      increments, so they are micro-steps such as the implementation of a very little new behaviour, a 
+      very little refactor after getting a green light and so on. Other exercises show how the code 
+      look likes after several iterations of the TDD process.</p>
+
+         
+      <p>
+      There are some lessons or exercises that do not have anything to do with the WikiAddressbook application.
+      They are isolated exercises showing an important an specific concept of the <strong>TDD methodology
+      </strong>.</p>    
+      
+      <blockquote>
+      I'm so sorry. All the source code is written using English for identifiers, but
+      the readme files and JavaDoc comments - that have important information like a tutorial - are written
+      in Spanish.<br/>
+      <b>Would you like to translate them to English? Or translate from Java to any other programming language?</b>
+         Just fork me on GitHub.</blockquote>
+    </div>
+  </div>
+  
+  <div class="box">
+    <h2>
+      <a name="documentation">Documentacion</a> 
+    </h2>  
+    <div class="block">
+      <p>
+      All the projects, both lessons and exercises, are prepared to generate a <strong>maven site</strong> full
+      of information. The readme files have the intentions and solutions of the exercises and lessons. The 
+      functional and test source code is full of JavaDoc and non JavaDoc comments that explain in detail 
+      different aspects of the TDD methodology, hits, tips, and so on.</p>
+      
+      <p>You can see here the maven site <a href="http://theprogrammingchronicles.github.com/tpc-tdd-exercises/">documentation</a>.</p>
+      
+      <blockquote>
+      I have planned to generate an index with all that information to quickly locate the exercises that show 
+      specific concepts of the methodology. <br/>
+      And again I'm so sorry, the documentation is still in Spanish.
+      </blockquote>
+  </div>
+  
+  <div class="box">
+    <h2>
+      <a name="downloads">Source Code and Documentation Downloads</a> 
+    </h2>  
+    <div class="block">
+      <p>You can download here a package with the last snapshot of the source code<a href="https://github.com/theprogrammingchronicles/tpc-tdd-exercises/archives/master">the source code</a>.</p>
+    </div>
+  </div>
+  
+  <div class="box">
+    <h2>
+      <a name="repository">Source Code Repository</a> 
+    </h2>  
+    <div class="block">
+      <p>You can access here the <a href="https://github.com/theprogrammingchronicles/tpc-tdd-exercises">GitHub source code repository</a>.</p>
+  	</div>
+  </div>
