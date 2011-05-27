@@ -118,7 +118,7 @@ h2#page-heading {
 	background-image: url("../img/switch_plus.gif");
 }
 .box h2 a:hover {
-	background-color:#111;
+/*	background-color:#088652; */
 }
 .block {
 	padding-top:10px;
@@ -225,34 +225,34 @@ ul.section ul li {
 	text-transform:none;
 }
 ul.section ul.current li a {
-	background:#eee;
-	border-bottom:1px solid #fff;
+/*	background:#eee;
+	border-bottom:1px solid #fff; */
 }
 ul.section ul.current li a:hover {
-	background:#ddd;
+/*	background:#ddd; */
 }
 ul.section ul.current li a:active {
-	background:#fff;
+/*	background:#fff; */
 }
 ul.section li a.current {
-	color:#fff;
-	background:#666;
+/*	color:#fff;
+	background:#666; */
 }
 ul.section li a.current:hover {
-	background:#555;
+/*	background:#21966b; */
 }
 ul.section li a.current:active {
-	background:#444;
-}
+/*	background:#444; */
+}	
 ul.section li a.active {
 	background:#fff;
 	cursor:default;
 }
 ul.section li.current > a.active,
 ul.section li.current > a.active:hover {
-	color:#fff;
+/*	color:#fff;
 	background:#666;
-	cursor:default;
+	cursor:default; */
 }
 
 
