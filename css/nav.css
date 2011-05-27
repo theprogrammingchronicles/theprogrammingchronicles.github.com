@@ -83,7 +83,7 @@ ul.nav li.current:hover ul li a:active {color:#666; background:#fff;}
 /* navigation (vertical subnavigation)
 ----------------------------------------------- */
 ul.nav {
-  background:#666;
+  background: #088652;
 }
 ul.main li {
   position:relative;
@@ -101,7 +101,7 @@ ul.main li a {
 	line-height:2.5em;
 	border:0;
 	color:#fff;
-	background:#666;
+	background:#088652;
 }
 ul.main li ul li a {
   width:12em;
